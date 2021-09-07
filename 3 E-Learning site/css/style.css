@@ -1,13 +1,25 @@
-html, body {height: 100%; } /*Useful for removing that extra white space at the bottom of webpage*/
-body{
+html,
+body {
+  height: 100%;
+}
+
+/*Useful for removing that extra white space at the bottom of webpage*/
+body {
   text-align: center;
   color: black;
-  font-family: 'Roboto'; 
-}
-h1,h2,h3,h4,h5,h6{
   font-family: 'Roboto';
 }
-p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto';
+}
+
+p {
   color: Gray;
 }
 
@@ -16,201 +28,212 @@ p{
   width: 10px;
   background: white;
 }
+
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #ff8c00;
   border-radius: 10px;
 }
 
 /*Change Text Selection Color*/
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: red;
   background: orange;
 }
+
 ::selection {
   color: red;
   background: orange;
 }
 
 /* Headings */
-.big-heading{
+.big-heading {
   font-family: 'Roboto';
   font-size: 3.5rem;
   line-height: 1.0;
   /*color:white; one way*/
 }
-.section-heading{
+
+.section-heading {
   font-size: 3rem;
   line-height: 1.5;
 }
 
-.container-fluid{
+.container-fluid {
   padding: 7% 5%;
 }
 
 /* Sections */
-.colored-section{
-    background: #ff8c00;
-    color: #fff; /*White text*/
+.colored-section {
+  background: #ff8c00;
+  color: #fff;
+  /*White text*/
 }
-.white-section{
-    background: #fff;
+
+.white-section {
+  background: #fff;
 }
 
 /* Navigation Bar */
-.navbar{
+.navbar {
   background-color: #ff8c00;
-  position:fixed;
+  position: fixed;
   width: 100%;
   overflow: hidden;
-  z-index: 100; /*very very important, for no overlapping*/
+  z-index: 100;
+  /*very very important, for no overlapping*/
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.navbar a{
-    color: white;
-    font-family: 'Roboto';
-    font-size: 1.0rem; /* Set a font size */
-    cursor: pointer;
-    transition: transform .2s;
+
+.navbar a {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 1.0rem;
+  /* Set a font size */
+  cursor: pointer;
+  transition: transform .2s;
 }
-.navbar a:hover{
-    transform: scale(1.1);
-    background-color: #cc7000;
+
+.navbar a:hover {
+  transform: scale(1.1);
+  background-color: #cc7000;
 }
-a.navbar-brand{
-    font-family: 'Roboto';
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0 10px;
+
+a.navbar-brand {
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 10px;
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(204,112,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar-collapse{
-   flex-grow :0;
-   text-align: center;
+
+.navbar-collapse {
+  flex-grow: 0;
+  text-align: center;
 }
-.search-btn{
+
+.search-btn {
   padding: 0 30px;
   border-color: #ff8c00;
   background: white;
-  color:#ff8c00;
+  color: #ff8c00;
 }
-.search-btn:hover{
+
+.search-btn:hover {
   border-color: #000;
   background: #ff8c00;
 }
-.search-btn:focus{background-color:#000;}
-.nav-item{
+
+.search-btn:focus {
+  background-color: #000;
+}
+
+.nav-item {
   padding: 0 15px;
 }
-.nav-link{
+
+.nav-link {
   font-size: 1.2rem;
   font-family: 'Roboto';
 }
 
 /* Download Buttons */
-.download-button{
-  margin:5% 3% 5% 0;
+.download-button {
+  margin: 5% 3% 5% 0;
 }
+
 /* Title section */
-#title{
+#title {
   text-align: left;
   padding: 7% 0 2%;
 }
+
 /* Title Image*/
-.title-image{
-  transform: rotate(-25deg);/* -ve for counter-clockwise*/
+.title-image {
+  transform: rotate(-25deg);
+  /* -ve for counter-clockwise*/
   position: absolute;
   width: 100%;
-  right:30px;
+  right: 30px;
 }
 
 /*Features Section*/
-#features{
-  padding:7% 5%;
+#features {
+  padding: 7% 5%;
   /*z-index: 1; not needed since feature section is relative and also one below in the html flow*/
-  position: relative; //To keep the element (features section) in html flow and also allow us to use z-index
+  position: relative;
+  /* To keep the element (features section) in html flow and also allow us to use z-index */
 }
-.feature-title{
+
+.feature-title {
   font-size: 1.5rem;
 }
-.feature-box{
-  padding:4.5%;
+
+.feature-box {
+  padding: 4.5%;
 }
-.icon{
-  color:#ff981a;
+
+.icon {
+  color: #ff981a;
   margin-bottom: 1rem;
 }
-.icon:hover{
-  color:#cc7000;
+
+.icon:hover {
+  color: #cc7000;
 }
 
 /* Testimonial section */
-#testimonials{
-/*Add padding in carousel-item, much better for the arrow buttons*/
-  background-color: ##ff8c00;
+#testimonials {
+  /*Add padding in carousel-item, much better for the arrow buttons*/
+  background-color: #ff8c00;
 }
-.testimonial-image{
+
+.testimonial-image {
   width: 10%;
   border-radius: 100%;
   margin: 20px;
 }
-.testimonial-text{
+
+.testimonial-text {
   font-size: 3rem;
   line-height: 1.5;
 }
-/* Press section */
-#press{
-  background-color: #ef8172;
-  padding-bottom: 20px;
-}
 
-.press-logo{
-  width: 15%;
-  margin: 20px 20px 50px;
-}
-/* Pricing Section */
-#pricing{
+/* YouTube Embed Section */
+#YouTubeEmbed {
   padding: 100px;
-}
-.price-text{
-  font-size: 3rem;
-  line-height: 1.5;
-}
-.pricing-column{
-  padding: 3% 2%;
-}
-
-/* CTA Section */
-
-.cta-heading{
-  font-family: 'Roboto';
-  font-size: 3.5rem;
-  line-height: 1.5;
 }
 
 /* Footer Section */
 
-.social-icon{
+.social-icon {
   margin: 20px 10px;
+  cursor: pointer;
 }
 
 
 @media (max-width:991px) {
-  #title{
+  #title {
     text-align: center;
   }
-  .title-image{
+
+  .title-image {
     position: static;
     transform: rotate(0);
   }
-  .navbar{
-border-bottom: 5px solid #000;
-border-radius:0 20px 20px 20px;
-width:100%;
+
+  .navbar {
+    border-bottom: 5px solid #000;
+    border-radius: 0 20px 20px 20px;
+    width: 100%;
+  }
 }
